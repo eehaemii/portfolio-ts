@@ -3,6 +3,9 @@ import { theme } from "./theme";
 
 export const Reset = css`
   * {
+    font-family: "Signika", sans-serif;
+    word-spacing: -0.025em;
+    letter-spacing: -0.025em;
     box-sizing: border-box;
     -webkit-text-size-adjust: none;
   }
@@ -57,12 +60,15 @@ export const Reset = css`
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: Pretendard, pretendard, "Noto Sans KR", "Malgun Gothic",
-      AppleSDGothic, "apple sd gothic neo", "noto sans korean",
-      "noto sans korean regular", "noto sans cjk kr", "noto sans cjk", Arial,
-      sans-serif;
+    font-family: Signika, "Noto Sans KR", "Malgun Gothic", AppleSDGothic,
+      "apple sd gothic neo", "noto sans korean", "noto sans korean regular",
+      "noto sans cjk kr", "noto sans cjk", Arial, sans-serif;
     color: #333;
     line-height: normal;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   main {

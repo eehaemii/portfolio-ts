@@ -1,49 +1,49 @@
 @font-face {
   font-weight: 300;
-  font-family: Pretendard;
+  font-family: Signika;
   font-style: normal;
-  src: local('pretendard-Light'), url(./pretendard/Pretendard-Light.woff2) format('woff2'),
-    url(./pretendard/Pretendard-Light.woff) format('woff'); /* Modern Browsers */
+  src: local('Signika-Light'), 
+    url(./signika/Signika-Light.ttf) format('woff'); /* Modern Browsers */
 
   font-display: swap;
 }
 
 @font-face {
   font-weight: 400;
-  font-family: Pretendard;
+  font-family: Signika;
   font-style: normal;
-  src: local('pretendard-Regular'), url(./pretendard/Pretendard-Regular.woff2) format('woff2'),
-    url(./pretendard/Pretendard-Regular.woff) format('woff'); /* Modern Browsers */
+  src: local('Signika-Regular'), 
+    url(./signika/Signika-Regular.ttf) format('woff'); /* Modern Browsers */
 
   font-display: swap;
 }
 
 @font-face {
   font-weight: 500;
-  font-family: Pretendard;
+  font-family: Signika;
   font-style: normal;
-  src: local('pretendard-Medium'), url(./pretendard/Pretendard-Medium.woff2) format('woff2'),
-    url(./pretendard/Pretendard-Medium.woff) format('woff'); /* Modern Browsers */
+  src: local('Signika-Medium'), 
+    url(./signika/Signika-Medium.ttf) format('woff'); /* Modern Browsers */
+
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: Signika;
+  font-style: normal;
+  src: local('Signika-SemiBold'), 
+    url(./signika/Signika-SemiBold.ttf) format('woff'); /* Modern Browsers */
 
   font-display: swap;
 }
 
 @font-face {
   font-weight: 700;
-  font-family: Pretendard;
+  font-family: Signika;
   font-style: normal;
-  src: local('pretendard-Bold'), url(./pretendard/Pretendard-Bold.woff2) format('woff2'),
-    url(./pretendard/Pretendard-Bold.woff) format('woff'); /* Modern Browsers */
-
-  font-display: swap;
-}
-
-@font-face {
-  font-weight: 900;
-  font-family: Pretendard;
-  font-style: normal;
-  src: local('pretendard-ExtraBold'), url(./pretendard/Pretendard-ExtraBold.woff2) format('woff2'),
-    url(./pretendard/Pretendard-ExtraBold.woff) format('woff'); /* Modern Browsers */
+  src: local('Signika-Bold'), 
+    url(./signika/Signika-Bold.ttf) format('woff'); /* Modern Browsers */
 
   font-display: swap;
 }
