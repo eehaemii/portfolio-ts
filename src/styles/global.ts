@@ -18,4 +18,11 @@ export const GlobalStyle = createGlobalStyle`
       box-shadow: inset 0px 0px 5px white;
   }
 
+  :root {
+    --base-delay: 0.5;
+    --reveal-speed: 0.5;
+    --stagger: 0.1;
+    --color: #000;
+  }
+
 `;
