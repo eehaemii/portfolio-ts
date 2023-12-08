@@ -1,17 +1,14 @@
 import { EThemeTag } from "../../interfaces/common";
 
 export interface IPropsTag {
-  message: string;
+  message?: string;
   themeType?: EThemeTag;
+  maxQty?: number | undefined;
 }
 
 export type TThemeInfo = {
   [key in EThemeTag]: {
     border: string;
     background: string;
-    color: string;
-    activeBorder: string;
-    activeBackground?: string;
-    activeColor?: string;
   };
 };

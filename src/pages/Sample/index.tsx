@@ -1,6 +1,7 @@
-import { ETheme, ESize } from "../../interfaces/common";
+import { ETheme, ESize, EThemeTag } from "../../interfaces/common";
 import * as S from "./styled";
 import Button from "../../components/Button";
+import Tag from "../../components/Tag";
 
 export default function Sample() {
   return (
@@ -39,6 +40,14 @@ export default function Sample() {
             <Button themeType={ETheme.DANGER}>fullwidth</Button>
           </div>
         </S.ContensWrap>
+      </S.Details>
+
+      <S.Details>
+        <S.Summary>Tag</S.Summary>
+
+        <div>
+          <Tag message="message" themeType={EThemeTag.HTML} />
+        </div>
       </S.Details>
     </div>
   );

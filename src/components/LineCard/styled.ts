@@ -5,7 +5,9 @@ import { IPropsLineCard } from "./interface";
 export type Props = Partial<IPropsLineCard>;
 
 export const LineCardWrap = styled.article<Props>`
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  flex: 1 1 40%;
   position: relative;
   padding: 2em;
   background-color: ${theme.colors.white};
@@ -26,4 +28,27 @@ export const LineCardWrap = styled.article<Props>`
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
+`;
+
+export const CompanyData = styled.span`
+  display: block;
+  width: 180px;
+  font-size: 1em;
+  color: ${theme.colors.gray3};
+`;
+
+export const Line = styled.span`
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 30px;
+  background-color: ${theme.colors.gray1};
+`;
+
+export const CompanyWrap = styled.div``;
+
+export const CompanyName = styled.h3`
+  display: block;
+  padding-bottom: 8px;
+  font-size: 1.2em;
 `;

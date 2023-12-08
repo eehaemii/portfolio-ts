@@ -7,27 +7,36 @@ export type Props = Partial<IPropsTag>;
 
 export const ThemeTag: TThemeInfo = {
   [EThemeTag.HTML]: {
-    border: `${theme.colors.primary2}`,
-    background: `${theme.colors.primary2}`,
-    color: `${theme.colors.white}`,
-    activeBorder: `${theme.colors.primary3}`,
-    activeBackground: `${theme.colors.primary3}`,
+    border: `${theme.colors.secondary1}`,
+    background: `${theme.colors.secondary1}`,
   },
-
   [EThemeTag.CSS]: {
-    border: `${theme.colors.gray1}`,
-    background: `${theme.colors.white}`,
-    color: `${theme.colors.gray2}`,
-    activeBorder: `${theme.colors.primary2}`,
-    activeColor: `${theme.colors.primary2}`,
+    border: `${theme.colors.secondary2}`,
+    background: `${theme.colors.secondary2}`,
   },
-
+  [EThemeTag.SCSS]: {
+    border: `${theme.colors.secondary3}`,
+    background: `${theme.colors.secondary3}`,
+  },
+  [EThemeTag.JQUERY]: {
+    border: `${theme.colors.secondary4}`,
+    background: `${theme.colors.secondary4}`,
+  },
   [EThemeTag.JAVASCRIPT]: {
-    border: `${theme.colors.danger1}`,
-    background: `${theme.colors.white}`,
-    color: `${theme.colors.danger1}`,
-    activeBorder: `${theme.colors.danger2}`,
-    activeColor: `${theme.colors.danger2}`,
+    border: `${theme.colors.secondary5}`,
+    background: `${theme.colors.secondary5}`,
+  },
+  [EThemeTag.REACT]: {
+    border: `${theme.colors.secondary6}`,
+    background: `${theme.colors.secondary6}`,
+  },
+  [EThemeTag.VUE]: {
+    border: `${theme.colors.secondary7}`,
+    background: `${theme.colors.secondary7}`,
+  },
+  [EThemeTag.BOOTSTRAP]: {
+    border: `${theme.colors.secondary8}`,
+    background: `${theme.colors.secondary8}`,
   },
 };
 
@@ -36,27 +45,21 @@ export const themeStyle = css<Props>`
     return (
       themeType &&
       css`
-        border: 1px solid ${ThemeTag[themeType].border};
         background: ${ThemeTag[themeType].background};
-        color: ${ThemeTag[themeType].color};
-
-        &:hover:not(:disabled),
-        &:active:not(:disabled) {
-          border: 1px solid ${ThemeTag[themeType].activeBorder};
-          background: ${ThemeTag[themeType].activeBackground};
-          color: ${ThemeTag[themeType].activeColor};
-        }
+        color: ${theme.colors.black};
       `
     );
   }}
 `;
 
 export const Tag = styled.span<Props>`
-  display: inline-flex;
-  gap: 5px;
-  padding: 3px 5px;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 4px 10px;
+  border-radius: 10px;
   background-color: rgba(11, 216, 255, 0.2);
   font-size: 0.7em;
+  word-break: break-word;
 
   ${themeStyle}
 `;

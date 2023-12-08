@@ -9,3 +9,10 @@ export const CareerWrap = styled.section`
 export const CareerTitle = styled.h1`
   font-size: 3em;
 `;
+
+export const CareerListArea = styled.div`
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+`;
