@@ -7,6 +7,7 @@ export const CareerWrap = styled.section`
 `;
 
 export const CareerTitle = styled.h1`
+  font-weight: 400;
   font-size: 3em;
 `;
 

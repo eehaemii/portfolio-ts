@@ -59,7 +59,8 @@ export const Reset = css`
   textarea {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 15px;
     font-family: Signika, "Noto Sans KR", "Malgun Gothic", AppleSDGothic,
       "apple sd gothic neo", "noto sans korean", "noto sans korean regular",
       "noto sans cjk kr", "noto sans cjk", Arial, sans-serif;

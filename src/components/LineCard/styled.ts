@@ -33,7 +33,7 @@ export const LineCardWrap = styled.article<Props>`
 export const CompanyData = styled.span`
   display: block;
   width: 180px;
-  font-size: 1em;
+  font-size: 1.16em;
   color: ${theme.colors.gray3};
 `;
 
