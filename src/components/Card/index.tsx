@@ -1,5 +1,12 @@
 import * as S from "./styled";
 
 export default function Card() {
-  return <S.CardWrap />;
+  return (
+    // props: 이미지, tag
+    <S.CardWrap>
+      <div>
+        <img src="" alt="" />
+      </div>
+    </S.CardWrap>
+  );
 }

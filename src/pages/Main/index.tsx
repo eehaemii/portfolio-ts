@@ -5,9 +5,9 @@ export default function Main() {
     <S.MainWrap>
       <S.MainArea>
         <S.MainAreaReveal>
-          <S.MainTitleWelcome>
+          <S.MainTitle>
             WELCOME , <S.Icon className="icon">🖐</S.Icon>
-          </S.MainTitleWelcome>
+          </S.MainTitle>
         </S.MainAreaReveal>
       </S.MainArea>
     </S.MainWrap>

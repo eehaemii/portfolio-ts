@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export const CardWrap = styled.div``;
+export const CardWrap = styled.div`
+  display: flex;
+`;

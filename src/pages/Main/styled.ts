@@ -49,18 +49,16 @@ export const MainAreaReveal = styled.div`
   --reveal-speed: 0.75;
 `;
 
-export const MainTitleWelcome = styled.span`
-  display: block;
+export const MainTitle = styled.span`
   position: relative;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 8vmin;
   color: ${theme.colors.white};
   overflow: hidden;
   letter-spacing: 6px;
   animation: ${showText} calc(var(--reveal-speed, 0.5) * 1s)
     calc(var(--delay) * 1s) steps(1) both;
-  --delay: 0.9;
-  // --color: #000;
+  // --delay: 0.9;
 
   &:after {
     content: "";
